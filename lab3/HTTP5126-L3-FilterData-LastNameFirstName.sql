@@ -27,6 +27,6 @@ SELECT item, price, inventory FROM stock_item WHERE NOT (category = 'Feline' OR 
 
 --  5
 -- A
-SELECT first_name, last_name, role AS Job Title, phone FROM employee ORDER BY last_name;
+SELECT first_name, last_name, role AS 'Job Title', phone FROM employee ORDER BY last_name;
 -- B
 SELECT stock_item_id, item, price, inventory FROM stock_item WHERE category = 'Murine' AND inventory > 20 ORDER BY price DESC;
