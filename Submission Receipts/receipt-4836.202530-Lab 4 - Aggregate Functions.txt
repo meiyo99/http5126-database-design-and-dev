@@ -1,0 +1,8 @@
+Your submission was successful!
+Course: 4836.202530, Database Design & Development - HTTP-5126-0NB
+Assessment: Lab 4 - Aggregate Functions
+
+Submission date: 1/31/25, 1:22 AM
+Submission size: 2.1 KB
+Submitter: Mayuresh Naidu
+Confirmation number: 60fabb8c289d4068a5d4d683eda570ef
