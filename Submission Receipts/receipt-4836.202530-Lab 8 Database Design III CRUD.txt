@@ -1,0 +1,8 @@
+Your submission was successful!
+Course: 4836.202530, Database Design & Development - HTTP-5126-0NB
+Assessment: Lab 8: Database Design III CRUD
+
+Submission date: 3/12/25, 5:46 PM
+Submission size: 3.2 KB
+Submitter: Mayuresh Naidu
+Confirmation number: 3a1d861d826d4cfe99cc28ed446e0afd
