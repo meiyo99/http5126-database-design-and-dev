@@ -1,0 +1,8 @@
+Your submission was successful!
+Course: 4836.202530, Database Design & Development - HTTP-5126-0NB
+Assessment: Lab 9 - Views & Triggers
+
+Submission date: 3/14/25, 12:32 AM
+Submission size: 4.4 KB
+Submitter: Mayuresh Naidu
+Confirmation number: 4712825e4d9b44d3959288505f6b7c79
