@@ -65,7 +65,7 @@ CREATE TABLE recipe_categories (
 -- Insert recipes
 INSERT INTO recipes (name, description, cuisine, cook_time_mins, rating, last_updated) VALUES
 ('Spaghetti Bolognese', 'Classic Italian meat sauce pasta.', 'Italian', 45, 5, NOW()),
-('Chicken Alfredo', 'Creamy Alfredo pasta with chicken.', 'Italian', 30, 4, NOW()),
+('Chicken Alfredo', 'White sauce pasta with chicken.', 'Italian', 30, 4, NOW()),
 ('Sunny Side Up', 'Quick breakfast omelette.', 'Breakfast', 10, 3, NOW()),
 ('Pancakes', 'Fluffy pancakes from scratch.', 'Breakfast', 20, 4, NOW()),
 ('Garlic Bread', 'Toasted bread with garlic butter.', 'Side Dish', 15, 2, NOW());
@@ -128,9 +128,9 @@ WHERE
 ORDER BY
     rating DESC;
 
-    -- [Trigger] update_recipe_timestamp: Executes BEFORE an UPDATE on the recipes table and sets the last_updated column to the current timestamp
+    -- [Trigger] trg_update_recipe_timestamp: Executes BEFORE an UPDATE on the recipes table and sets the last_updated column to the current timestamp
 DELIMITER $$
-CREATE TRIGGER update_recipe_timestamp
+CREATE TRIGGER trg_update_recipe_timestamp
 BEFORE UPDATE ON recipes
 FOR EACH ROW
 BEGIN
@@ -138,7 +138,7 @@ BEGIN
 END$$
 DELIMITER ;
 
--- [Procedure] find_recipes: Accepts search inpuit for ingredients, cuisine, or recipe name/description. Queries relevant tables and returns matching details.
+-- [Procedure] usp_find_recipes: Accepts search inpuit for ingredients, cuisine, or recipe name/description. Queries relevant tables and returns matching details.
 -- DELIMITER $$
 -- CREATE PROCEDURE usp_find_recipes (
 --     IN p_ingredient_name VARCHAR(255),
